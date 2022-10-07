@@ -1,5 +1,5 @@
 console.log('hi')
-$.get("http://localhost:8000/api/memo",(data)=>{
+$.get("https://express-api-ow2p.onrender.com/api/memo",(data)=>{
     for (let i = 0; i < data.length; i++) {
     $('#display').prepend(data[i].description)
     }
@@ -14,7 +14,7 @@ formSub.addEventListener('submit', event => { //adds event listener
     const formData = new FormData(formSub); //takes all data from form
     const formInput = Object.fromEntries(formData); //puts that dat into a 
 
-    fetch('http://localhost:8000/api/memo', {
+    fetch('https://express-api-ow2p.onrender.com/api/memo', {
         method: 'POST', 
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify(formInput)}) //turns the form data into a string
