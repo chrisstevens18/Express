@@ -4,10 +4,11 @@ const app = express();
 const PORT = 8000;
 const {Client} = require('pg');
 const bodyP = require('body-parser');
+
 app.use(cors())
 app.use(bodyP());
 const client = new Client({
-    connectionString:"postgres://postgres:postgrespw@localhost:49153/memo_db"
+    connectionString:"postgres://memo_zqhk_user:VSN8JYivzLUf2izDvX8W9zajgcpkegn7@dpg-cd089oda4994l0df7b6g-a.oregon-postgres.render.com/memo_zqhk"
 });
 client.connect();
 app.use(express.static('public'))
