@@ -1,9 +1,9 @@
 console.log('hi')
-$.get("https://express-api-ow2p.onrender.com/api/memo",(data)=>{
-    for (let i = 0; i < data.length; i++) {
-    $('#display').prepend(data[i].description)
-    }
-})
+// $.get("https://express-api-ow2p.onrender.com/api/memo",(data)=>{
+//     for (let i = 0; i < data.length; i++) {
+//     $('#display').prepend(data[i].description)
+//     }
+// })
 
 const formSub = document.querySelector('.form');
  //selects the form and puts it in a variable
