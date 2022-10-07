@@ -1,3 +1,4 @@
+console.log('hi')
 $.get("http://localhost:8000/api/memo",(data)=>{
     for (let i = 0; i < data.length; i++) {
     $('#display').prepend(data[i].description)
