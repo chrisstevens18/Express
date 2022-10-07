@@ -8,7 +8,7 @@ const bodyP = require('body-parser');
 app.use(cors())
 app.use(bodyP());
 const client = new Client({
-    connectionString:"postgres://memo_zqhk_user:VSN8JYivzLUf2izDvX8W9zajgcpkegn7@dpg-cd089oda4994l0df7b6g-a.oregon-postgres.render.com/memo_zqhk"
+    connectionString:"postgres://memo_zqhk_user:VSN8JYivzLUf2izDvX8W9zajgcpkegn7@dpg-cd089oda4994l0df7b6g-a.oregon-postgres.render.com/memo_zqhk?ssl=true"
 });
 client.connect();
 app.use(express.static('public'))
